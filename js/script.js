@@ -25,44 +25,21 @@ $(document).ready(function(){
 
 
 
+   
+
     $('.faq_item_title').click(function(){
-        if( !$(this).hasClass('active')){
-            $(this).addClass('active')
-            $(this).next().slideDown()
-        }else{
-            $(this).removeClass('active')
-            $(this).next().slideUp()
-        }
-        
+        $('.faq_item_title').removeClass('active')
+        $('.faq_item_description').slideUp()
+        $(this).addClass('active')
+        $(this).next().slideDown()
     })
+
+ 
 
   
 
     
-    // var block_show = false;
- 
-    // function scrollTracking(){
-    //     if (block_show) {
-    //         return false;
-    //     }
-    
-    //     var wt = $(window).scrollTop();
-    //     var wh = $(window).height();
-    //     var et = $('.tokenimics').offset().top;
-    //     var eh = $('.tokenimics').outerHeight();
-    //     var dh = $(document).height();   
-    
-    //     if (wt + wh >= et || wh + wt == dh || eh + et < wh){
-    //         block_show = true;
-            
-    //         $('.tokenimics').addClass('tokenimics-active')
-          
-    //     }
-    // }
-    
-    // $(window).scroll(function(){
-    //     scrollTracking();
-    // });
+   
 
 
 
